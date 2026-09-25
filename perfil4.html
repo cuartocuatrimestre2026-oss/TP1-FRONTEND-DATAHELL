@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil: Sergio Arenhardt | DataHell</title>
+  <link rel="icon" type="image/png" href="img/logo-DataHell.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="img/logo-DataHell.png" alt="Logo DataHell">
+        <span>DataHell</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú principal" aria-expanded="false">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="bitacora.html" class="nav-link">Bitácora</a></li>
+          <li><a href="perfil1.html" class="nav-link">Johana</a></li>
+          <li><a href="perfil2.html" class="nav-link">Mariela</a></li>
+          <li><a href="perfil3.html" class="nav-link">Miguel</a></li>
+          <li><a href="perfil4.html" class="nav-link active">Sergio</a></li>
+          <li><a href="perfil5.html" class="nav-link">Sonia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DEL PERFIL -->
+  <main class="main-content">
+    
+    <!-- BARRA DE NAVEGACIÓN RÁPIDA INTERNA -->
+    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+      <a href="perfil3.html" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.9rem;">
+        🡸 Anterior: Miguel
+      </a>
+      <span style="font-weight: 700; color: var(--color-cream);">Integrante 4 de 5</span>
+      <a href="perfil5.html" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.9rem;">
+        Siguiente: Sonia 🡺
+      </a>
+    </div>
+
+    <div class="profile-container">
+      
+      <!-- COLUMNA IZQUIERDA: TARJETA DE DATOS PERSONALES -->
+      <aside class="profile-sidebar">
+        <div class="profile-avatar-lg">
+          <img src="img/Sergio_avatar.jpeg" alt="Avatar Sergio Arenhardt">
+        </div>
+
+        <h1 class="profile-name">Sergio Arenhardt</h1>
+        <p class="profile-role">Backend Dev & Bases de Datos</p>
+        
+        <p class="profile-bio">
+          "Apasionado por la arquitectura del lado del servidor, 
+          el modelado de bases de datos, el desarrollo ordenado y 
+          la resolución de problemas lógicos.<br> 
+          Desarrollador de Java con Spring Boot & Spring Security.<br>
+          Enfocado en microprocesos de Java para automatizaciones.<br> 
+          Aplicaciones Móviles en Kotlin"
+        </p>
+
+        <ul class="profile-info-list">
+          <li class="profile-info-item">
+            <span>Ubicación</span>
+            <span>Eldorado </span>
+            <span>(Provincia de Misiones)</span>
+          </li>
+          <li class="profile-info-item">
+            <span>Edad</span>
+            <span>57 años</span>
+          </li>
+          <li class="profile-info-item">
+            <span>Rol en el Equipo</span>
+            <span>Backend & DB Dev</span>
+          </li>
+          <li class="profile-info-item">
+            <span>Redes</span>
+            <span>
+              <a href="https://github.com/sealar24" target="_blank" rel="noopener">GitHub</a> | 
+              <a href="https://www.linkedin.com/in/sergio-alberto-arenhardt-8ba23a2a7/" target="_blank" rel="noopener">LinkedIn</a>
+            </span>
+          </li>
+        </ul>
+
+        <blockquote class="profile-quote">
+          "La perfección del carácter es vivir cada día como si fuese el último, 
+          sin apresurarse, sin apatía, sin pretensiones."
+          <span class="profile-quote-author">— Marco Aurelio</span>
+        </blockquote>
+
+        <button id="contactMemberBtn" data-member-name="Sergio Arenhardt" class="btn btn-primary" style="width: 100%;">
+          Enviar Saludo a Sergio
+        </button>
+      </aside>
+
+      <!-- COLUMNA DERECHA: SECCIONES DETALLADAS -->
+      <section class="profile-main">
+        
+        <!-- SECCIÓN 1: HABILIDADES -->
+        <div class="card-section">
+          <h3 class="section-title"><svg class="icon-mono" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Habilidades Destacadas</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Desarrollo Backend & Java</span>
+            <span class="skill-tag">Bases de Datos & Modelado</span>
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">Trabajo en Equipo & Liderazgo</span>
+            <span class="skill-tag">Organización & Lógica</span>
+          </div>
+        </div>
+
+        <!-- SECCIÓN 2: PELÍCULAS FAVORITAS -->
+        <div class="card-section">
+          <h3 class="section-title"><svg class="icon-mono" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg> Películas Favoritas</h3>
+          <p style="color: var(--slate); font-size: 0.88rem; margin-bottom: 1rem;">
+            Haz clic en una película para ver la reseña.
+          </p>
+          <div class="media-list">
+            <div class="media-item" data-type="Película" data-desc="El clásico ícono del espionaje internacional repleto de acción, tecnología y elegancia cinematográfica.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+              <div>
+                <strong>Saga 007 James Bond</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">Acción / Espionaje</p>
+              </div>
+            </div>
+
+            <div class="media-item" data-type="Película" data-desc="Universo de exploración espacial, diplomacia intergaláctica y visión futurista de la humanidad.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+              <div>
+                <strong>Saga Star Trek</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">Ciencia Ficción</p>
+              </div>
+            </div>
+
+            <div class="media-item" data-type="Película" data-desc="Tensión militar, suspenso y estrategia submarina de primer nivel durante la Guerra Fría.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+              <div>
+                <strong>La Caza del Octubre Rojo</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">1990 · Suspenso / Acción</p>
+              </div>
+            </div>
+          </div>
+          <div class="media-detail-box"></div>
+        </div>
+
+        <!-- SECCIÓN 3: DISCOS FAVORITOS -->
+        <div class="card-section">
+          <h3 class="section-title"><svg class="icon-mono" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Discos Favoritos</h3>
+          <p style="color: var(--slate); font-size: 0.88rem; margin-bottom: 1rem;">
+            Haz clic en un disco para ver la recomendación.
+          </p>
+          <div class="media-list">
+            <div class="media-item" data-type="Álbum" data-desc="Obra maestra de la música electrónica instrumental y sintetizadores analógicos revolucionarios.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <div>
+                <strong>Equinoxe</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">Jean-Michel Jarre (1978)</p>
+              </div>
+            </div>
+
+            <div class="media-item" data-type="Álbum" data-desc="Un álbum solista memorable de Charly García con sonido potente, innovación y lírica refinada.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <div>
+                <strong>Parte De La Religión</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">Charly García (1987)</p>
+              </div>
+            </div>
+
+            <div class="media-item" data-type="Álbum" data-desc="Fusión épica de heavy metal y música folk basada en la obra literaria Don Quijote de la Mancha.">
+              <span class="media-icon"><svg class="icon-mono" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <div>
+                <strong>La Leyenda de la Mancha</strong>
+                <p style="font-size: 0.8rem; color: var(--slate);">Mägo de Oz (1998)</p>
+              </div>
+            </div>
+          </div>
+          <div class="media-detail-box"></div>
+        </div>
+
+        <!-- SECCIÓN 4: DATOS CURIOSOS & HOBBIES -->
+        <div class="card-section">
+          <h3 class="section-title"><svg class="icon-mono" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Datos Curiosos & Intereses</h3>
+          <ul style="list-style: none; padding: 0; line-height: 1.8; font-size: 0.95rem; color: var(--ink);">
+            <li>· <strong>Hobbies:</strong> Caminatas al aire libre, fotografía, cocinar.</li>
+            <li>· <strong>Algo característico:</strong> Me encantan los autos y la Fórmula 1.</li>
+            <li>· <strong>Soy:</strong> Creativo. Tranquilo. Curioso. Responsable. Divertido.</li>
+            <li>· <strong>Mascota:</strong> Tengo dos perros.</li>
+            <li>· <strong>Videojuego Favorito:</strong> World of Warships.</li>
+            <li>· <strong>Comida Favorita:</strong> Pastas caseras.</li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="perfil1.html">Johana</a>
+      <a href="perfil2.html">Mariela</a>
+      <a href="perfil3.html">Miguel</a>
+      <a href="perfil4.html">Sergio</a>
+      <a href="perfil5.html">Sonia</a>
+    </div>
+    <p>© 2026 Equipo DataHell - Trabajo Práctico Grupal 1.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/perfil.js"></script>
+</body>
+</html>

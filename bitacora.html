@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es" class="page-bitacora">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitácora de Desarrollo Web | DataHell </title>
+  <meta name="description"
+    content="Bitácora de trabajo en equipo: proceso, decisiones de diseño, dificultades encontradas y soluciones implementadas.">
+  <link rel="icon" type="image/png" href="img/logo-DataHell.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="img/logo-DataHell.png" alt="Logo DataHell">
+        <span>DataHell</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menú de Navegación" aria-expanded="false">☰</button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="bitacora.html" class="nav-link active">Bitácora</a></li>
+          <li><a href="perfil1.html" class="nav-link">Johana</a></li>
+          <li><a href="perfil2.html" class="nav-link">Mariela</a></li>
+          <li><a href="perfil3.html" class="nav-link">Miguel</a></li>
+          <li><a href="perfil4.html" class="nav-link">Sergio</a></li>
+          <li><a href="perfil5.html" class="nav-link">Sonia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DE LA BITÁCORA -->
+  <main class="main-content">
+
+    <div class="hero-section">
+      <h1 class="hero-title">· Bitácora de Desarrollo ·</h1>
+      <p class="hero-subtitle">
+        Registro cronológico de reuniones, acuerdos, decisiones de diseño, retos técnicos y soluciones adoptadas durante
+        el desarrollo de esta página Web.
+      </p>
+
+      <!-- BOTONES DE FILTRADO DINÁMICO JS -->
+      <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+        <button class="btn btn-primary bitacora-filter-btn" data-filter="all">Todas las Entradas</button>
+        <button class="btn btn-outline bitacora-filter-btn" data-filter="decisiones">Decisiones</button>
+        <button class="btn btn-outline bitacora-filter-btn" data-filter="dificultades">Dificultades</button>
+        <button class="btn btn-outline bitacora-filter-btn" data-filter="git">Git & Publicación</button>
+      </div>
+    </div>
+
+    <!-- LÍNEA DE TIEMPO DE LA BITÁCORA -->
+    <section style="max-width: 900px; margin: 0 auto;">
+      <div class="timeline">
+
+        <!-- ENTRADA 1: PLANIFICACIÓN Y ROLES -->
+        <article class="timeline-item" data-category="decisiones">
+          <div class="timeline-card">
+            <span class="timeline-date">Fase 1 · Planificación y Organización del Proyecto</span>
+            <h3>1. Coordinación Inicial y Definición de Roles</h3>
+            <p>
+              Nos reunimos para leer detenidamente las consignas y 
+              requerimientos para la entrega del presente proyecto. 
+              Acordamos la división de tareas entre los integrantes <br> 
+              (a.k.a: Johi, Mariü, Migue, Sergio, Sony).<br>  
+              Creamos una nube compartida en <code>Gmail</code> y un repositorio público grupal en <code>GitHub</code>.
+            </p>
+            <div class="bitacora-note">
+              <ul style="margin: 0; padding-left: 1.2rem; list-style-type: disc;">
+                <li><strong>Decisiones:</strong> Establecer una guía de estilo compartida (CSS Variables) en
+                <code>css/styles.css</code> para evitar discrepancias de color y tipografía entre las páginas.</li>
+                <li style="margin-top: 0.5rem;"><strong>Próximo Paso:</strong> Realizar un cuestionario para evaluar el contenido de los perfiles personales.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ENTRADA 2: MAQUETACIÓN Y ESTRUCTURA -->
+        <article class="timeline-item" data-category="decisiones">
+          <div class="timeline-card">
+            <span class="timeline-date">Fase 2 · Estructura, Maquetación HTML5 y Diseño Adaptativo</span>
+            <h3>2. Estructura HTML, Semántica y Grid System</h3>
+            <p>
+              Se maquetaron las páginas principales: «portada» (<code>index.html</code>), «perfiles» individuales de los 5
+              integrantes y la «bitácora». Se utilizaron elementos semánticos (<code>header</code>, <code>nav</code>,
+              <code>main</code>, <code>article</code>, <code>aside</code>, <code>footer</code>).
+            </p>
+            <div class="bitacora-note">
+              <ul style="margin: 0; padding-left: 1.2rem; list-style-type: disc;">
+                <li><strong>Breakpoints Obligatorios:</strong> Configuración estricta de Media Queries CSS para 400px, 900px y
+                1200px garantizando visualización fluída sin desbordes.</li>
+                <li style="margin-top: 0.5rem;"><strong>Decisión de Diseño:</strong> Logotipo del equipo DataHell (iniciado con moodboard en Canva y bocetos manuales, digitalizado iterativamente con Gemini e IA), colores representativos de la marca e imágenes de perfil con avatares ilustrados, generados en Gemini a partir de fotos reales mediante un prompt uniforme para mantener coherencia visual y resguardar la privacidad.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ENTRADA 3: DIFICULTADES TÉCNICAS Y SOLUCIONES -->
+        <article class="timeline-item" data-category="dificultades">
+          <div class="timeline-card">
+            <span class="timeline-date">Fase 3 · Retos Técnicos y Ajustes</span>
+            <h3>3. Dificultades Superadas durante el Desarrollo</h3>
+            <p>
+              <strong>Dificultad 1:</strong> Desbordes de texto y tarjetas en dispositivos móviles de 400px.<br>
+              <span style="display:inline-block; margin-top: 0.25rem;"><strong>Solución:</strong> Implementación del
+                menú desplegable "Hamburger" mediante JavaScript y ajuste de <code>grid-template-columns: 1fr</code> en
+                pantallas pequeñas.</span>
+            </p>
+            <p style="margin-top: 1rem;">
+              <strong>Dificultad 2:</strong> Mantener uniformidad sin restringir la personalidad de los perfiles
+              individuales.<br>
+              <span style="display:inline-block; margin-top: 0.25rem;"><strong>Solución:</strong> Uso de una tarjeta
+                base común combinada con componentes dinámicos personalizados en JS.</span>
+            </p>
+        
+            <div class="bitacora-note">
+              <ul style="margin: 0; padding-left: 1.2rem; list-style-type: disc;">
+                <li><strong>Criterio sobre IA:</strong> El uso de Gemini y Antigravity aportó agilidad en la generación visual del logo y avatares, y en el cálculo de contrastes AAA, pero requirió estricto control humano.</li>
+              </ul>
+            </div>
+            <p style="margin-top: 1rem;">    
+              <strong>Dificultad 3:</strong> Garantizar que el soporte asistivo de la IA no afectara la autoría ni la calidad técnica requerida.<br>
+              <span style="display:inline-block; margin-top: 0.25rem;"><strong>Solución:</strong> Cada integrante redactó y curó sus propios contenidos personales, y el código (CSS, responsive y DOM) fue revisado, ajustado y depurado manualmente por el equipo para cumplir al 100% con los estándares de la consigna.</span>
+            </p>
+          </div>
+         
+        </article>
+
+        <!-- ENTRADA 4: INTERACTIVIDAD JAVASCRIPT -->
+        <article class="timeline-item" data-category="decisiones">
+          <div class="timeline-card">
+            <span class="timeline-date">Fase 4 · Interactividad Dinámica con JavaScript</span>
+            <h3>4. Implementación de Funciones Dinámicas</h3>
+            <p>
+              Se integró JavaScript nativo para añadir dinamismo en la «portada» (generador de frases inspiradoras y
+              contadores animados) , en cada «perfil» (caja de reseña de películas/discos y envío de saludos)
+              y en la presente «bitácora».
+            </p>
+          </div>
+        </article>
+
+        <!-- ENTRADA 5: DESPLIEGUE Y PUBLICACIÓN -->
+        <article class="timeline-item" data-category="git">
+          <div class="timeline-card">
+            <span class="timeline-date">Fase 5 · Publicación en Vercel y Documentación</span>
+            <h3>5. Publicación y Documentación Final en README</h3>
+            <p>
+              Se conectó el repositorio grupal de GitHub con la plataforma Vercel para el despliegue continuo en
+              producción. Redacción final del archivo <code>README.md</code> cumpliendo exhaustivamente con todos los
+              criterios y requerimientos de la consigna asignada para el presente proyecto.
+            </p>
+          </div>
+        </article>
+
+        <!-- ENTRADA 6: DataHell -->
+        <article class="timeline-item" data-category="git">
+          <div class="timeline-card">
+            <span class="timeline-date">Nuestro lema: Hacer que la tecnología de vanguardia sea accesible 
+              para tod@s, democratizando el acceso a soluciones de software que 
+              impulsan el progreso y la igualdad de oportunidades.</span>
+            <h3>Somos DataHell</h3>
+            <img src="img/DataHell_equipo.jpeg" alt="Equipo Datahell" style="display: block; margin: 0 auto;">
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="perfil1.html">Johana</a>
+      <a href="perfil2.html">Mariela</a>
+      <a href="perfil3.html">Miguel</a>
+      <a href="perfil4.html">Sergio</a>
+      <a href="perfil5.html">Sonia</a>
+    </div>
+    <p>© 2026 Equipo DataHell - Trabajo Práctico Grupal 1.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/bitacora.js"></script>
+</body>
+
+</html>

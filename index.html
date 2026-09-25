@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataHell | Desarrolladores </title>
+  <meta name="description"
+    content="Sitio web grupal para Desarrollo de Sistemas Web. Presentación de equipo, perfiles individuales y bitácora de desarrollo.">
+  <link rel="icon" type="image/png" href="img/logo-DataHell.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="img/logo-DataHell.png" alt="Logo DataHell">
+        <span>DataHell</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menú de Navegación" aria-expanded="false">
+        ☰
+      </button>
+
+      <!-- MENÚ DE NAVEGACIÓN OBLIGATORIO -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="bitacora.html" class="nav-link">Bitácora</a></li>
+          <li><a href="perfil1.html" class="nav-link">Johana</a></li>
+          <li><a href="perfil2.html" class="nav-link">Mariela</a></li>
+          <li><a href="perfil3.html" class="nav-link">Miguel</a></li>
+          <li><a href="perfil4.html" class="nav-link">Sergio</a></li>
+          <li><a href="perfil5.html" class="nav-link">Sonia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CONTENIDO PRINCIPAL - PORTADA
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- SECCIÓN HERO / PRESENTACIÓN DEL EQUIPO -->
+    <section class="hero-section">
+      <h1 class="hero-title"><img src="img/logo-DataHell.png" alt="Logo DataHell" class="hero-logo-img"> Equipo DataHell</h1>
+
+      <p class="hero-subtitle">
+        <br><br>
+        En DataHell creemos que desarrollar software no empieza escribiendo código. 
+        Empieza escuchando. <br>
+        La tecnología no es el objetivo, es la herramienta.<br><br>
+        Ayudamos a empresas a resolver problemas reales mediante 
+        software diseñado alrededor de sus necesidades, sus procesos y sus personas.
+        Escuchamos, entendemos, cuestionamos y construimos.<br>
+        Porque sabemos que algunos problemas son simples, otros son complejos y 
+        algunos directamente parecen salidos del infierno.
+        Nosotros no le escapamos al infierno. Entramos, analizamos, entendemos  
+        y salimos con una solución.<br><br>
+        Algunos problemas necesitan software. Otros, necesitan Data Hell.<br>
+        Desde una idea hasta una solución compleja, combinamos desarrollo de software,
+        innovación y excelencia técnica para crear productos digitales que sean útiles,
+        escalables y preparados para crecer.<br>
+        Pero nuestro diferencial no está solamente en lo que sabemos hacer, 
+        sino, en cómo trabajamos...Nos involucramos. Comunicamos. Acompañamos. 
+        Y entendemos que un buen proyecto no se construye solamente con código: 
+        se construye con confianza.<br><br>
+        «DataHell» software inteligente para problemas reales.
+      </p>
+
+      <!-- INTERACCIÓN DINÁMICA JS 1: Generador de Frase Motivacional -->
+      <div style="margin-top: 1.5rem; margin-bottom: 2rem;">
+        <button id="heroQuoteBtn" class="btn btn-primary">
+          Inspiración del Día
+        </button>
+        <p id="heroQuoteDisplay"
+          style="margin-top: 1rem; font-family: var(--font-heading); font-style: italic; font-size: 1.1rem; color: var(--slate); transition: opacity 0.3s ease;">
+          "Haz clic en el botón para descubrir nuestras frases preferidas."
+        </p>
+      </div>
+
+      <!-- ESTADÍSTICAS DEL EQUIPO (DINÁMICAS CON JS) -->
+      <div
+        style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 2rem; border-top: 1px solid var(--mist); padding-top: 1.5rem;">
+        <div>
+          <span class="stat-number" data-target="5"
+            style="font-size: 2.2rem; font-weight: 700; font-family: var(--font-heading); color: var(--ink);">0</span>
+          <p style="font-size: 0.85rem; color: var(--slate); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Integrantes</p>
+        </div>
+        <div>
+          <span class="stat-number" data-target="25"
+            style="font-size: 2.2rem; font-weight: 700; font-family: var(--font-heading); color: var(--ink);">0</span>
+          <p style="font-size: 0.85rem; color: var(--slate); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Habilidades Total</p>
+        </div>
+        <div>
+          <span class="stat-number" data-target="100%"
+            style="font-size: 2.2rem; font-weight: 700; font-family: var(--font-heading); color: var(--ink);">0</span>
+          <p style="font-size: 0.85rem; color: var(--slate); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Compromiso</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTADO COMPLETO DE INTEGRANTES -->
+    <section>
+      <h2 style="text-align: center; margin-bottom: 0.5rem; font-family: var(--font-heading); font-size: 2.2rem; font-weight: 400; color: var(--ink);">Nuestros
+        Integrantes</h2>
+      <p style="text-align: center; color: var(--slate); margin-bottom: 2rem; font-weight: 400;">
+        Haz clic en "Ver Perfil" para conocer más sobre cada integrante de DataHell.
+      </p>
+
+      <div class="members-grid">
+
+        <!-- INTEGRANTE 1: JOHANA NAVARRO -->
+        <article class="member-card">
+          <div class="avatar-wrapper">
+            <img src="img/Johana_avatar.jpg" alt="Avatar Johana Navarro">
+          </div>
+          <h3 class="member-name">Johana Navarro</h3>
+          <p class="member-meta">Córdoba Capital · 33 años</p>
+          <p class="member-bio-preview">
+            « Desarrollo de Lógica & QA »
+          </p>
+          <a href="perfil1.html" class="btn btn-outline" style="width: 100%;">Ver Perfil 🡺 Johana</a>
+        </article>
+
+        <!-- INTEGRANTE 2: MARIELA LORENZO -->
+        <article class="member-card">
+          <div class="avatar-wrapper">
+            <img src="img/Mariela_avatar.jpg" alt="Avatar Mariela Lorenzo">
+          </div>
+          <h3 class="member-name">Mariela Lorenzo</h3>
+          <p class="member-meta"> Boedo (CABA) · 46 años</p>
+          <p class="member-bio-preview">
+            « Diseño UX/UI & Creatividad y Código »
+          </p>
+          <a href="perfil2.html" class="btn btn-outline" style="width: 100%;">Ver Perfil 🡺 Mariela</a>
+        </article>
+
+        <!-- INTEGRANTE 3: MIGUEL MARTINEZ -->
+        <article class="member-card">
+          <div class="avatar-wrapper">
+            <img src="img/Migue_avatar.jpeg" alt="Avatar Migue Martinez">
+          </div>
+          <h3 class="member-name">Miguel Martínez</h3>
+          <p class="member-meta">Bahía Blanca (Bs.As.) · 53 años</p>
+          <p class="member-bio-preview">
+            « Diseño Gráfico & Infraestructura IT »
+          </p>
+          <a href="perfil3.html" class="btn btn-outline" style="width: 100%;">Ver Perfil 🡺 Miguel</a>
+        </article>
+
+        <!-- INTEGRANTE 4: SERGIO ARENHARDT -->
+        <article class="member-card">
+          <div class="avatar-wrapper">
+            <img src="img/Sergio_avatar.jpeg" alt="Avatar Sergio Arenhardt">
+          </div>
+          <h3 class="member-name">Sergio Arenhardt</h3>
+          <p class="member-meta">Eldorado (Misiones) · 57 años</p>
+          <p class="member-bio-preview">
+            « Backend & DB Dev »
+          </p>
+          <a href="perfil4.html" class="btn btn-outline" style="width: 100%;">Ver Perfil 🡺 Sergio</a>
+        </article>
+
+        <!-- INTEGRANTE 5: SONIA PEREIRA -->
+        <article class="member-card">
+          <div class="avatar-wrapper">
+            <img src="img/Sony_avatar.jpg" alt="Avatar Sonia Pereira">
+          </div>
+          <h3 class="member-name">Sonia Pereira</h3>
+          <p class="member-meta"> Belgrano (CABA) · 52 años</p>
+          <p class="member-bio-preview">
+            « Maquetado & Arquitectura y Documentación »
+           
+          </p>
+          <a href="perfil5.html" class="btn btn-outline" style="width: 100%;">Ver Perfil 🡺 Sonia</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- NAVEGACIÓN RÁPIDA A LA BITÁCORA -->
+    <section
+      style="margin-top: 4rem; text-align: center; background: var(--white); padding: 3rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--mist); box-shadow: var(--shadow-sm);">
+      <h3
+        style="margin-bottom: 0.75rem; font-family: var(--font-heading); font-size: 1.8rem; font-weight: 400; letter-spacing: 0.03em;">
+        · Bitácora de Desarrollo ·</h3>
+      <p
+        style="color: var(--slate); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; font-weight: 400;">
+        Conoce el proceso de trabajo del equipo, la toma de decisiones, 
+        dificultades superadas y el registro de la colaboración para el desarrollo
+        de esta Web.
+      </p>
+      <a href="bitacora.html" class="btn btn-primary">Explorar la Bitácora</a>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA (FOOTER)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="perfil1.html">Johana</a>
+      <a href="perfil2.html">Mariela</a>
+      <a href="perfil3.html">Miguel</a>
+      <a href="perfil4.html">Sergio</a>
+      <a href="perfil5.html">Sonia</a>
+    </div>
+    <p>© 2026 Equipo DataHell <br>
+      Trabajo Práctico Grupal 1 : Desarrollado con HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

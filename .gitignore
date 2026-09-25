@@ -1,0 +1,5 @@
+﻿PARA_ELIMINAR_antes de entrega/
+.vercel
+node_modules/
+.DS_Store
+Thumbs.db
