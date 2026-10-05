@@ -20,7 +20,9 @@ Presenta una portada institucional del equipo, 5 páginas de perfil individual e
 | **Mariela Lorenzo** | Diseño UI/UX & Código - Creativa | Boedo (CABA) | [@MariuLorenzo](https://github.com/MariuLorenzo) |
 | **Miguel Martínez** | Diseño Gráfico & Infraestructura IT | Bahía Blanca (BsAs)| [@mpmarcol](https://github.com/mpmarcol) |
 | **Sergio Arenhardt** | Backend Dev & Bases de Datos | Eldorado (Misiones) | [@sealar24](https://github.com/sealar24) \| [LinkedIn](https://www.linkedin.com/in/sergio-alberto-arenhardt-8ba23a2a7/) |
-| **Sonia Pereira** | Maquetado Web & Arquitectura | Belgrano, (CABA) | [@SoniaPe](https://github.com/SonyGahan) |
+| **Sonia Pereira** | Maquetado Web & Arquitectura | Belgrano, (CABA) | [@SonyGahan](https://github.com/SonyGahan) |
+
+> **Nota de Coautoría y Contribución Académica:** El desarrollo, diseño y documentación de este proyecto fue realizado de manera conjunta y coordinada por los 5 integrantes del equipo DataHell, reflejando el trabajo colaborativo en el repositorio institucional.
 
 ---
 
